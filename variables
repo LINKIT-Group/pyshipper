@@ -1,0 +1,6 @@
+NAME=pyshipper-demo
+VERSION=0.80.1
+AUTHOR="Anthony Potappel"
+AUTHOR_EMAIL="anthony.potappel@gmail.com"
+DESCRIPTION="pyshipper-demo"
+URL="https://github.com/LINKIT-Group/stackstage"

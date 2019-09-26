@@ -1,6 +1,6 @@
-NAME=pyshipper-demo
-VERSION=0.80.1
-AUTHOR="Anthony Potappel"
-AUTHOR_EMAIL="anthony.potappel@gmail.com"
-DESCRIPTION="pyshipper-demo"
-URL="https://github.com/LINKIT-Group/stackstage"
+NAME=${YOUR_MODULE_NAME}
+VERSION=${VERSION_OF_YOUR_MODULE}
+AUTHOR="${YOUR_NAME_OR_ALIAS}"
+AUTHOR_EMAIL="${YOUR_EMAIL_ACCOUNT}"
+DESCRIPTION="${WHAT_YOUR_MODULE_DOES}"
+URL="${A_REPOSITORY_URL}"

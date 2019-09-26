@@ -72,15 +72,15 @@ module:
 		&& ln -sf module "$(MODULE_NAME)" \
 		&& python3 setup.py sdist"
 
-.PHONY: upload
-upload:
-	#$(RUN_DOCK) "twine upload --repository-url https://test.pypi.org/legacy/ $(MODULE_NAME)/dist/*"
-	$(RUN_DOCK) "twine upload $(MODULE_NAME)/dist/*"
-
 .PHONY: pylint
 pylint:
 	$(RUN_DOCK) "cd ~/$(MODULE_NAME)/module \
 		&& pylint --rcfile=../.pylintrc * -f parseable"
+
+.PHONY: upload
+upload:
+	#$(RUN_DOCK) "twine upload --repository-url https://test.pypi.org/legacy/ $(MODULE_NAME)/dist/*"
+	$(RUN_DOCK) "twine upload $(MODULE_NAME)/dist/*"
 
 .PHONY: clean
 clean:

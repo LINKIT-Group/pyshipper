@@ -79,7 +79,6 @@ pylint:
 
 .PHONY: upload
 upload:
-	#$(RUN_DOCK) "twine upload --repository-url https://test.pypi.org/legacy/ $(MODULE_NAME)/dist/*"
 	$(RUN_DOCK) "twine upload $(MODULE_NAME)/dist/*"
 
 .PHONY: clean

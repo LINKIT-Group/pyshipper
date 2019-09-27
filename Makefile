@@ -40,9 +40,12 @@ export HOST_USER
 export HOST_UID
 
 
+
 .PHONY: shell 
 shell:
-	$(RUN_DOCK) "cd $(MODULE_NAME) && bash"
+	$(RUN_DOCK) "cd ~/$(MODULE_NAME) \
+		&& ([[ -d "$(MODULE_NAME)" ]] || ln -sf module "$(MODULE_NAME)") \
+		&& bash"
 
 .PHONY: fork
 FILES = \
@@ -64,7 +67,7 @@ else
 endif
 
 .PHONY: module
-module:
+module: link
 	@# ensure there is a symlink from MODULE_NAME to module directory
 	@# then run regular setup.py to build the module
 	$(RUN_DOCK) "cd ~/$(MODULE_NAME) \

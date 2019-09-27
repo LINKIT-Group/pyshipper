@@ -15,6 +15,8 @@ PWD ?= pwd_unknown
 # retrieve NAME from /variables file
 MODULE_NAME = \
 	$(shell awk -F= '/^NAME\ ?=/{gsub(/\47|"/, "", $$NF);print $$NF;exit}' variables)
+MODULE_VERSION = \
+	$(shell awk -F= '/^VERSION\ ?=/{gsub(/\47|"/, "", $$NF);print $$NF;exit}' variables)
 
 # if vars not set specifially: try default to environment, else fixed value.
 # strip to ensure spaces are removed in future editorial mistakes.
@@ -82,7 +84,7 @@ pylint:
 
 .PHONY: upload
 upload:
-	$(RUN_DOCK) "twine upload $(MODULE_NAME)/dist/*"
+	$(RUN_DOCK) "twine upload ~/$(MODULE_NAME)/dist/$(MODULE_NAME)-$(MODULE_VERSION)*"
 
 .PHONY: clean
 clean:

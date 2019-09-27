@@ -96,7 +96,7 @@ The command above prompts for a username and password. You need to insert your [
 After you created the module, published it on [PyPi](https://pypi.org/), you can install it on any capable system and use it like any other Python3 pip module.
 
     # install the module
-    python3 -m pip install ${YOUR_NEW_MODULE_NAME}
+    sudo python3 -m pip install ${YOUR_NEW_MODULE_NAME}
 
 ## Final thoughts
 I already use this automation myself and I am quite happy with it. I regularly create small Python modules for specific tasks; it’s incredibly easy to import them in containers or server-less environments afterwards. 

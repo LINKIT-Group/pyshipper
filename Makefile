@@ -51,7 +51,7 @@ shell:
 
 .PHONY: fork
 FILES = \
-	module files Makefile Dockerfile docker-compose.yml setup.py variables .gitignore .pylintrc
+	module files Makefile Dockerfile docker-compose.yml setup.py MANIFEST.in variables .gitignore .pylintrc
 DEST ?= $(dest)
 fork:
 ifeq ($(DEST),)

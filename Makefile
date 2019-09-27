@@ -67,7 +67,7 @@ else
 endif
 
 .PHONY: module
-module: link
+module: 
 	@# ensure there is a symlink from MODULE_NAME to module directory
 	@# then run regular setup.py to build the module
 	$(RUN_DOCK) "cd ~/$(MODULE_NAME) \

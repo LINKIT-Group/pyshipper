@@ -22,9 +22,6 @@ RUN apk update \
         jinja2 \
         twine \
         awscli \
-    && apk del \
-        python3-dev \
-        build-base \
     && rm -rf /opt/build/* \
     && rm -rf /var/cache/apk/* \
     && rm -rf /root/.cache/* \

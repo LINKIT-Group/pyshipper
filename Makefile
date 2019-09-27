@@ -46,7 +46,7 @@ export HOST_UID
 .PHONY: shell 
 shell:
 	$(RUN_DOCK) "cd ~/$(MODULE_NAME) \
-		&& ([[ -d "$(MODULE_NAME)" ]] || ln -sf module "$(MODULE_NAME)") \
+		&& ([ -d "$(MODULE_NAME)" ] || ln -sf module "$(MODULE_NAME)") \
 		&& bash"
 
 .PHONY: fork
@@ -61,7 +61,7 @@ else
 	@# copy when either directory does not exist, or is empty
 	@# skip if a non-empty directory exist
 	@# Note this excludes README.md and LICENSE -- you own your own project ;)
-	@(([[ ! -d "$(DEST)" ]] || find "$(DEST)" -prune -type d -empty |grep -q .) \
+	@(([ ! -d "$(DEST)" ] || find "$(DEST)" -prune -type d -empty |grep -q .) \
 	  && mkdir -p "$(DEST)" \
       && cp -R $(FILES) "$(DEST)/" \
 	  && touch $(DEST)/README.md \

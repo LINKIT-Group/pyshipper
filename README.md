@@ -7,9 +7,9 @@
 You also need the ability to run make, have a POSIX compliant shell and a code editor — nearly every Linux-, Unix- or Mac system will work.
 
 ### PyShipper
-[PyShipper](https://github.com/LINKIT-Group/pyshipper) is an automation part, doing the grunt-work of setting up a module structure, adds some boilerplate code, and provides a pipeline to build, test and ship a module — saving time when you update or create a module.
+PyShipper is an automation part, doing the grunt-work of setting up a module structure, adds some boilerplate code, and provides a pipeline to build, test and ship a module — saving time when you update or create a module.
 
-The relevant code is mostly in Makefile, complemented with some Docker configuration and a slightly modified setup.py. For the curious readers, this previous [Docker & Makefile](https://itnext.io/docker-makefile-x-ops-sharing-infra-as-code-parts-ea6fa0d22946?source=friends_link&sk=1c42525c25039efadcbd25776a3019dd) article explains the base. [PyShipper](https://github.com/LINKIT-Group/pyshipper) is a version that does the job of Python module delivery.
+The relevant code is mostly in Makefile, complemented with some Docker configuration and a slightly modified setup.py. For the curious readers, this previous [Docker & Makefile](https://itnext.io/docker-makefile-x-ops-sharing-infra-as-code-parts-ea6fa0d22946?source=friends_link&sk=1c42525c25039efadcbd25776a3019dd) article explains the base. PyShipper is a version that does the job of Python module delivery.
 
 ### Steps
  1. Think of a name

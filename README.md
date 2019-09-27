@@ -1,5 +1,7 @@
 ## Shipping pip packages — the automated way
 
+[ITNEXT: Create, build and ship a Python3 pip module in 5 minutes](https://itnext.io/create-build-and-ship-a-python3-pip-module-in-5-minutes-31dd6d9d5c8f?source=friends_link&sk=311381bad115c64f022902e62aa582ff)
+
 ### Prerequisites
 * PyPi account. Register [here](https://pypi.org/account/register/) and save your credentials in a safe place.
 * Docker. Install instructions: [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce) or [Mac](https://docs.docker.com/docker-for-mac/install/).

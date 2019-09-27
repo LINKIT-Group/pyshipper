@@ -42,7 +42,7 @@ export HOST_UID
 
 .PHONY: shell 
 shell:
-	$(RUN_DOCK) "bash"
+	$(RUN_DOCK) "cd $(MODULE_NAME) && bash"
 
 .PHONY: fork
 FILES = \

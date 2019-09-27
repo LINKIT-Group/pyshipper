@@ -15,7 +15,7 @@ setuptools.setup(
     url=envstring("URL"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=[envstring("NAME")],
+    packages=[envstring("NAME"), envstring("NAME") + ".main"],
     classifiers=[
         "Operating System :: POSIX :: Linux",
         "License :: OSI Approved :: MIT License",
